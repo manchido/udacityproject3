@@ -47,8 +47,8 @@ async function bootstrap() {
   };
   app.use(cors(corsOptions));
   app.useGlobalFilters(new ErrorFilter());
-  await app.listen(config.PORT);
+  await app.lsten(config.PORT);
   logger.log(`Listening on port ${config.PORT}.`);
 }
 
-//bootstrap();
+bootstrap();
