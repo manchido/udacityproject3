@@ -8,7 +8,7 @@ import { ExpressAdapter } from '@nestjs/platform-express';
 import * as cors from 'cors';
 import { TransformInterceptor } from './modules/common/interceptors/TransformInterceptor';
 import * as express from 'express';
-import from './modules/errors/error.filter';
+import { ErrorFilter } from './modules/errors/error.filter';
 
 async function bootstrap() {
   const logger = new AppLogger();
