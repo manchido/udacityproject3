@@ -8,7 +8,7 @@ import { ExpressAdapter } from '@nestjs/platform-express';
 import * as cors from 'cors';
 import { TransformInterceptor } from './modules/common/interceptors/TransformInterceptor';
 import * as express from 'express';
-import { ErrorFilter } from './modules/errors/error.filter';
+import from './modules/errors/error.filter';
 
 async function bootstrap() {
   const logger = new AppLogger();
@@ -47,7 +47,7 @@ async function bootstrap() {
   };
   app.use(cors(corsOptions));
   app.useGlobalFilters(new ErrorFilter());
-  await app.lsten(config.PORT);
+  await app.listen(config.PORT);
   logger.log(`Listening on port ${config.PORT}.`);
 }
 
