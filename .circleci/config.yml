@@ -137,12 +137,12 @@ jobs:
             aws ec2 describe-instances \
             --query 'Reservations[*].Instances[*].PublicIpAddress' \
             --filters "Name=tag:project,Values=udapeople" \
-            --output text >> .circleci/ansible/inventory.txt
+            --output text >> ~/.circleci/ansible/inventory.txt
      
       - persist_to_workspace:
           root: ~/
           paths:
-            - .circleci/ansible/inventory.txt
+            - .cricleci/ansible/inventory.txt
       # Here's where you will add some code to rollback on failure 
       - destroy-environment
 
@@ -164,6 +164,9 @@ jobs:
           name: Install dependencies
           command: |
             yum install -y tar  gzip
+      - run:
+          name: Install ansible
+          command: |
             apk add --update ansible
             
       - run:
