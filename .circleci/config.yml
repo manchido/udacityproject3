@@ -103,6 +103,9 @@ jobs:
              npm install
              # npm install oauth-sign@^0.9.0
              npm audit fix --audit-level=critical --force
+      - save_cache:
+          paths: [backend/node_modules]
+          key: scan-backend
   deploy-infrastructure:
     docker:
       - image: amazon/aws-cli
@@ -180,7 +183,7 @@ jobs:
     steps:
       - checkout 
       - restore_cache:
-           keys: [backend-build]
+           keys: [scan-backend]
       # Checkout code from git
       - run:
           name: Run migrations
