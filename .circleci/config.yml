@@ -112,8 +112,7 @@ jobs:
       - run: 
           name: Install tar and gzip
           command: |
-            yum install -y tar 
-            yum install -y gzip
+            yum install -y tar gzip
          
       - run: 
           name: Ensure back-end infrastructure exists
@@ -220,7 +219,6 @@ jobs:
           name: Install dependencies
           command: |
             # your code here
-            yum install -y tar
             yum install -y nodejs 
             yum install python36
             apk add --update ansible
