@@ -193,7 +193,7 @@ jobs:
             sudo npm i -g npm@latest
             sudo npm install typescript -g
             # Run and save the migration output
-            sudo npm run migrations > migrations_dump.txt
+            #sudo npm run migrations > migrations_dump.txt
            
       - run:
           name: Send migration results to memstash
