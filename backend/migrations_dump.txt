@@ -1,0 +1,179 @@
+
+> glee2@1.0.0 premigrations
+> npm run build
+
+
+> glee2@1.0.0 build
+> tsc
+
+src/main.hmr.ts(1,29): error TS2307: Cannot find module '@nestjs/core' or its corresponding type declarations.
+src/main.ts(1,29): error TS2307: Cannot find module '@nestjs/core' or its corresponding type declarations.
+src/main.ts(2,48): error TS2307: Cannot find module '@nestjs/swagger' or its corresponding type declarations.
+src/main.ts(4,32): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/main.ts(7,32): error TS2307: Cannot find module '@nestjs/platform-express' or its corresponding type declarations.
+src/main.ts(8,23): error TS2307: Cannot find module 'cors' or its corresponding type declarations.
+src/main.ts(10,26): error TS2307: Cannot find module 'express' or its corresponding type declarations.
+src/main.ts(15,33): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/main.ts(16,30): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/main.ts(22,36): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/migrations/1549375960026-AddOrders.ts(1,49): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/migrations/1549398619849-FixProductIdTable.ts(1,49): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/migrations/1555722583168-AddEmployee.ts(1,47): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/app/app.logger.ts(1,43): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/app/app.logger.ts(2,26): error TS2307: Cannot find module 'winston' or its corresponding type declarations.
+src/modules/app/app.logger.ts(3,24): error TS2307: Cannot find module 'winston-loggly-bulk' or its corresponding type declarations.
+src/modules/app/app.logger.ts(4,30): error TS2307: Cannot find module 'winston-slack-webhook' or its corresponding type declarations.
+src/modules/app/app.logger.ts(5,25): error TS2307: Cannot find module 'dotenv' or its corresponding type declarations.
+src/modules/app/app.logger.ts(8,25): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/app/app.logger.ts(9,21): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/app/app.logger.ts(16,12): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/app/app.logger.ts(23,22): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/app/app.logger.ts(25,19): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/app/app.logger.ts(26,20): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/app/app.logger.ts(27,19): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/app/app.module.ts(6,8): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/app/app.module.ts(12,31): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/app/app.service.ts(1,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/auth/auth.module.ts(1,24): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/auth/auth.module.ts(2,32): error TS2307: Cannot find module '@nestjs/passport' or its corresponding type declarations.
+src/modules/auth/currentUser.ts(1,25): error TS2307: Cannot find module '@nestjs/core' or its corresponding type declarations.
+src/modules/auth/currentUser.ts(2,43): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/auth/currentUser.ts(3,25): error TS2307: Cannot find module 'express' or its corresponding type declarations.
+src/modules/auth/jwt.strategy.ts(1,51): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/auth/jwt.strategy.ts(2,34): error TS2307: Cannot find module '@nestjs/passport' or its corresponding type declarations.
+src/modules/auth/jwt.strategy.ts(3,38): error TS2307: Cannot find module 'passport-jwt' or its corresponding type declarations.
+src/modules/auth/jwt.strategy.ts(4,35): error TS2307: Cannot find module 'glee-jwks-rsa' or its corresponding type declarations.
+src/modules/auth/jwt.strategy.ts(11,31): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/auth/jwt.strategy.ts(12,32): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/auth/jwt.strategy.ts(13,22): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/auth/user.decorator.ts(1,38): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/commands/ICommand.ts(1,37): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/common/commands/ICommandHandler.ts(1,44): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/common/commands/commandDispatcher.ts(1,22): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/commands/syncCommandDispatcher.ts(1,55): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/commands/syncCommandDispatcher.ts(4,28): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/common/commands/syncCommandDispatcher.ts(74,20): error TS2339: Property 'getMetadata' does not exist on type 'typeof Reflect'.
+src/modules/common/commands/validation/commandValidator.decorator.ts(8,13): error TS2339: Property 'defineMetadata' does not exist on type 'typeof Reflect'.
+src/modules/common/commands/validation/commandValidatorOptions.ts(1,22): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/commands/validation/joiValidator.ts(1,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/common/commands/validation/validationExplorer.ts(1,34): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/commands/validation/validationExplorer.ts(2,33): error TS2307: Cannot find module '@nestjs/core/injector/instance-wrapper' or its corresponding type declarations.
+src/modules/common/commands/validation/validationExplorer.ts(3,24): error TS2307: Cannot find module '@nestjs/core/injector/module' or its corresponding type declarations.
+src/modules/common/commands/validation/validationExplorer.ts(4,34): error TS2307: Cannot find module '@nestjs/core/injector/modules-container' or its corresponding type declarations.
+src/modules/common/commands/validation/validationExplorer.ts(47,30): error TS2339: Property 'getMetadata' does not exist on type 'typeof Reflect'.
+src/modules/common/common.module.ts(1,38): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/common.module.ts(4,28): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/common/entities/aggregateRoot.ts(2,25): error TS2307: Cannot find module 'class-transformer' or its corresponding type declarations.
+src/modules/common/entities/baseRepository.ts(6,8): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/common/entities/baseRepository.ts(9,37): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/common/events/domainEvent.ts(1,24): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/common/events/eventHandler.ts(1,47): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/common/events/syncEventDispatcher.ts(1,26): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/common/events/syncEventDispatcher.ts(5,27): error TS2307: Cannot find module '@nestjs/core' or its corresponding type declarations.
+src/modules/common/events/syncEventDispatcher.ts(6,34): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/interceptors/TransformInterceptor.ts(6,8): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/common/interceptors/TransformInterceptor.ts(7,28): error TS2307: Cannot find module 'rxjs' or its corresponding type declarations.
+src/modules/common/interceptors/TransformInterceptor.ts(8,21): error TS2307: Cannot find module 'rxjs/operators' or its corresponding type declarations.
+src/modules/common/interceptors/TransformInterceptor.ts(9,30): error TS2307: Cannot find module 'class-transformer' or its corresponding type declarations.
+src/modules/config/config.module.ts(1,24): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/config/config.service.ts(1,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/config/config.service.ts(2,38): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/config/config.service.ts(31,41): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/config/config.service.ts(70,16): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/modules/domain/employees/commands/handlers/employee-activator.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-activator.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-address-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-address-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-birthdate-updater.handler.ts(1,25): error TS2307: Cannot find module 'moment-timezone' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-birthdate-updater.handler.ts(4,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-birthdate-updater.handler.ts(5,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-company-email-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-company-email-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-creator.handler.ts(5,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-creator.handler.ts(6,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-deactivator.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-deactivator.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-display-name-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-display-name-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-effective-date-updater.handler.ts(1,25): error TS2307: Cannot find module 'moment-timezone' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-effective-date-updater.handler.ts(4,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-effective-date-updater.handler.ts(5,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-name-updater.handler.ts(1,25): error TS2307: Cannot find module 'moment-timezone' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-name-updater.handler.ts(4,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-name-updater.handler.ts(5,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-personal-email-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-personal-email-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-phone-number-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-phone-number-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-salary-type-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-salary-type-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-salary-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-salary-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-tags-updater.handler.ts(3,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-tags-updater.handler.ts(4,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-updater.handler.ts(1,25): error TS2307: Cannot find module 'moment-timezone' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-updater.handler.ts(4,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/commands/handlers/employee-updater.handler.ts(5,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forActivateEmployee/check-employee-exists.validator.ts(6,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forCreateEmployee/check-properties-value.validator.ts(3,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forDeactivateEmployee/check-employee-exists.validator.ts(6,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeAddress/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeAddress/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeBirthDate/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeBirthDate/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeCompanyEmail/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeCompanyEmail/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeDisplayName/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeDisplayName/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeEffectiveDate/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeEffectiveDate/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeName/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeName/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeePersonalEmail/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeePersonalEmail/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeePhoneNumber/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeePhoneNumber/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeSalary/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeSalary/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeSalaryType/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeSalaryType/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeTags/check-employee-exists.validator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/commands/validators/forUpdateEmployeeTags/check-properties-value.validator.ts(4,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/employees/employee.controller.ts(13,8): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/employee.controller.ts(14,27): error TS2307: Cannot find module '@nestjs/passport' or its corresponding type declarations.
+src/modules/domain/employees/employee.controller.ts(105,34): error TS2550: Property 'includes' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2016' or later.
+src/modules/domain/employees/employee.module.ts(1,38): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/employees/employee.module.ts(6,31): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/domain/employees/employee.module.ts(9,27): error TS2307: Cannot find module '@nestjs/core' or its corresponding type declarations.
+src/modules/domain/employees/employee.module.ts(14,30): error TS2307: Cannot find module '@nestjs/passport' or its corresponding type declarations.
+src/modules/domain/employees/entities/employee.entity.ts(1,25): error TS2307: Cannot find module 'moment-timezone' or its corresponding type declarations.
+src/modules/domain/employees/entities/employee.entity.ts(3,56): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/domain/employees/events/handlers/notify-employee-created-console.handler.ts(2,31): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/employees/repositories/employees.repository.ts(3,31): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/domain/employees/repositories/employees.repository.ts(4,37): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/domain/employees/repositories/employees.repository.ts(5,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/orders/commands/handlers/orderCreator.ts(6,32): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/orders/commands/handlers/orderCreator.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/orders/commands/handlers/orderCreator.ts(8,28): error TS2307: Cannot find module 'uuid' or its corresponding type declarations.
+src/modules/domain/orders/commands/validators/forCreateOrder/checkProductExist.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/orders/commands/validators/forCreateOrder/checkPropertiesValue.ts(3,22): error TS2307: Cannot find module '@hapi/joi' or its corresponding type declarations.
+src/modules/domain/orders/entities/order.entity.ts(10,8): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/domain/orders/entities/product.entity.ts(1,68): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/domain/orders/events/handlers/notify-product-add-to-order-console.ts(3,31): error TS2307: Cannot find module '@nestjs/cqrs' or its corresponding type declarations.
+src/modules/domain/orders/orders.controller.ts(3,63): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/orders/orders.controller.ts(7,31): error TS2307: Cannot find module '@nestjs/passport' or its corresponding type declarations.
+src/modules/domain/orders/orders.controller.ts(10,27): error TS2307: Cannot find module '@nestjs/passport' or its corresponding type declarations.
+src/modules/domain/orders/orders.module.ts(1,63): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/orders/orders.module.ts(5,27): error TS2307: Cannot find module '@nestjs/core' or its corresponding type declarations.
+src/modules/domain/orders/orders.module.ts(9,31): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/domain/orders/orders.module.ts(16,31): error TS2307: Cannot find module '@nestjs/passport' or its corresponding type declarations.
+src/modules/domain/orders/repositories/orderRepository.ts(3,31): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/domain/orders/repositories/orderRepository.ts(4,37): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/domain/orders/repositories/orderRepository.ts(6,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/domain/orders/repositories/productRepository.ts(4,55): error TS2307: Cannot find module '@nestjs/typeorm' or its corresponding type declarations.
+src/modules/domain/orders/repositories/productRepository.ts(6,43): error TS2307: Cannot find module 'typeorm' or its corresponding type declarations.
+src/modules/domain/orders/repositories/productRepository.ts(7,28): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/errors/error.filter.ts(7,8): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/errors/error.filter.ts(15,17): error TS2339: Property 'getStatus' does not exist on type 'Error'.
+src/modules/status/status.controller.ts(1,33): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
+src/modules/status/status.module.ts(1,24): error TS2307: Cannot find module '@nestjs/common' or its corresponding type declarations.
