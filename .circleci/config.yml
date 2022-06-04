@@ -218,6 +218,7 @@ jobs:
           name: Install dependencies
           command: |
             # your code here
+            yum install -y tar
             yum install -y nodejs 
             yum install python36
             apk add --update ansible
