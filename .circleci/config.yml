@@ -218,8 +218,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            # your code here
-            yum install -y tar gzip
+            sudo yum install -y tar gzip
             yum install -y nodejs 
             yum install python36
             apk add --update ansible
