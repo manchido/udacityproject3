@@ -213,11 +213,13 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+            curl -sL https://rpm.nodesource.com/setup_16.x | bash -
             yum install -y nodejs 
             yum update
-            yum install python37
-            apk add --update ansible
+            yum install -y python37
+            curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+            python get-pip.py --user
+            python -m pip install --user ansible
       - run:
           name: Get backend url
           command: |
