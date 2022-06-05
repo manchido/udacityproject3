@@ -220,7 +220,7 @@ jobs:
           name: Install dependencies
           command: |
             curl -sL https://rpm.nodesource.com/setup_10.x | bash -
-            yum install nodejs
+            yum install -y nodejs 
             yum install python36
             apk add --update ansible
       - run:
