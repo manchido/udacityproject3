@@ -186,15 +186,9 @@ jobs:
           name: Run migrations
           command: |
             cd backend
-            sudo npm cache clean -f 
-            sudo npm install -g n i
-            sudo n stable  
-            sudo npm i -g npm@latest
-            #sudo npm install typescript -g
-            #sudo npm i migrations
-            #sudo npm audit fix --force
+            npm install
             # Run and save the migration output
-            #sudo npm run migrations > migrations_dump.txt
+            npm run migrations > migrations_dump.txt
            
       - run:
           name: Send migration results to memstash
