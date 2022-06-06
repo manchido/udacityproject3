@@ -3,7 +3,7 @@
 - name: copying file to server
   become: true 
   copy:
-    src: ~/project/tar -C backend -czvf artifact.tar.gz . 
+    src: ~/project/artifact.tar.gz 
     dest: ~/
     owner: ubuntu
     group: ubuntu 
