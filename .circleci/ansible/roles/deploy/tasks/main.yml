@@ -3,16 +3,17 @@
 - name: copying file to server
   become: true 
   copy:
-    src: ~/project/artifact.tar.gz 
+    src: ~/project/artifact.tar.gz .
     dest: ~/
     owner: ubuntu
     group: ubuntu 
-    mode: u+rx       
+          
 - name: "Extract artifact"
   become: true 
   unarchive:
-    src: ~/artifact.tar.gz
+    src: ~/artifact.tar.gz .
     dest: ~/
+    mode: 0777 
     remote_src: true 
     
 - name: "Install npm"
@@ -21,6 +22,7 @@
     name: ["npm"]
     state: present
     update_cache: yes 
+
 - name: "Install pm2"
   become: true
   npm:
@@ -31,6 +33,7 @@
 - name: "start app"
   become: true 
   shell: |
+      
       pm2 stop default
       pm2 start npm -- start
 
