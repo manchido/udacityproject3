@@ -1,0 +1,26 @@
+---
+- name: "Extract artifact"
+  become: true 
+  unarchive:
+    src: tar -C backend -czvf artifact.tar.gz .
+    dest: /var/www/backend
+    mode: u+rwx
+- name: "Install npm"
+  become: true
+  apt:
+    name: ["npm"]
+    state: present
+    update_cache: yes 
+- name: "Install pm2"
+  become: true
+  npm:
+    name: pm2
+    global: yes
+    production: yes
+    state: present 
+- name: "start app"
+  become: true 
+  shell: |
+      pm2 stop default
+      pm2 start npm -- start
+
