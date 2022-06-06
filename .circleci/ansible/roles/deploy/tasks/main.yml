@@ -13,6 +13,7 @@
   unarchive:
     src: ~/artifact.tar.gz
     dest: ~/
+    remote_src: true 
     
 - name: "Install npm"
   become: true
