@@ -2,8 +2,8 @@
 - name: "Extract artifact"
   become: true 
   unarchive:
-    src: tar -C backend -czvf artifact.tar.gz .
-    dest: /var/www/backend
+    src: /project/tar -C backend -czvf artifact.tar.gz .  
+    dest: ~/
     mode: u+rwx
 - name: "Install npm"
   become: true
