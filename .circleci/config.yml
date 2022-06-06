@@ -295,7 +295,7 @@ jobs:
             echo "${API_URL}"
             
       - run:
-          name: Backend smoke test.
+          name: Backend smoke test
           command: |
             
             if curl "${API_URL}/api/status" | grep "ok"
