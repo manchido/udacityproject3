@@ -283,7 +283,7 @@ jobs:
           command: |
             apk add --update nodejs nodejs-npm
             apk --no-cache add curl
-            aapk add --no-cache aws-cli
+            apk add --no-cache aws-cli
       - run:
           name: Get backend url
           command: |
