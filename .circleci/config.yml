@@ -284,15 +284,12 @@ jobs:
             apk add --update nodejs nodejs-npm
             apk --no-cache add curl
             python -m pip install awscli
-      - run:
-          name: Get backend url
-          command: |
-            echo "${API_URL}"
             
       - run:
           name: Backend smoke test
           command: |
-            
+            export API_URL="http://${BACKEND_IP}:3030"
+            echo "${API_URL}"
             if curl "${API_URL}/api/status" | grep "ok"
             then
                 return 0
