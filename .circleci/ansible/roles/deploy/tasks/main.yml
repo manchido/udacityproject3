@@ -1,18 +1,20 @@
 ---
 
-- name: copying file with playbook
+- name: copying file to server
   become: true 
   copy:
     src: ~/project/tar -C backend -czvf artifact.tar.gz . 
     dest: ~/
     owner: ubuntu
-    group: ubuntu        
+    group: ubuntu 
+    mode: u+rx       
 - name: "Extract artifact"
   become: true 
   unarchive:
-    src: ~/tar -C backend -czvf artifact.tar.gz .  
-    dest: /var/www/
-    mode: u+rx
+    src: ~/
+    dest: /var/www/html
+    remote_src: yes
+    
 - name: "Install npm"
   become: true
   apt:
