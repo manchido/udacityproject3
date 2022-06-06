@@ -10,10 +10,9 @@
     mode: u+rx       
 - name: "Extract artifact"
   become: true 
-  shell: |
-     unzip artifact.tar.gz
-    
-    
+  unarchive:
+    src: ~/artifact.tar.gz
+    dest: ~/
     
 - name: "Install npm"
   become: true
