@@ -1,23 +1,13 @@
----
+---          
+- name: "Copy artifact"
+  become: true
+  copy: 
+     src: ~/project/artifact.tar.gz
+     dest: ~/ 
+     owner: ubuntu
+     group: ubuntu
+     mode: 0777
 
-- name: copying file to server
-  become: true 
-  copy:
-    src: ~/project/artifact.tar.gz
-    dest: ~/
-    owner: ubuntu
-    group: ubuntu 
-          
-- name: "Extract artifact"
-  become: true 
-  unarchive:
-    src: ~/project/artifact.tar.gz
-    dest: ~/
-    mode: 0777 
-    remote_src: no
-    owner: ubuntu
-    group: ubuntu 
-    
 - name: "Install npm"
   become: true
   apt:
@@ -32,10 +22,16 @@
     global: yes
     production: yes
     state: present 
+- name: "Extract artifact"
+  become: true
+  shell: | 
+    tar xvfz ~/artifact.tar.gz
+    rm -rf ~/artifact.tar.gz
 
 - name: "start app"
   become: true 
   shell: |
+      chmod 777 /artifact
       cd /artifact 
       npm install
       pm2 stop default
