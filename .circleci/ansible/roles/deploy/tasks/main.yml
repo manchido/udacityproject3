@@ -10,10 +10,10 @@
     mode: u+rx       
 - name: "Extract artifact"
   become: true 
-  unarchive:
-    src: ~/
-    dest: ~/
-    remote_src: yes
+  shell: |
+     unzip artifact.tar.gz
+    
+    
     
 - name: "Install npm"
   become: true
