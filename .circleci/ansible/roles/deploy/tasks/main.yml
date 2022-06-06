@@ -11,10 +11,12 @@
 - name: "Extract artifact"
   become: true 
   unarchive:
-    src: ~/artifact.tar.gz
+    src: ~/project/artifact.tar.gz
     dest: ~/
     mode: 0777 
-    remote_src: true 
+    remote_src: no
+    owner: ubuntu
+    group: ubuntu 
     
 - name: "Install npm"
   become: true
