@@ -28,7 +28,6 @@ commands:
             when: on_fail
             command: |
                 SUCCESS=$(curl --insecure  https://kvdb.io/HoH8XUdCH28nZGvZMQTDRL/migration_<< parameters.workflow_id >>)
-                # Logic for reverting the database state
                 if (( $SUCCESS == 1 ));
                 then
                     cd ~/project/backend
@@ -223,7 +222,7 @@ jobs:
              # If you are using kvdb.io, generate the bucket ID "9GE4jRtKznmVKRfvdBABBe" in your local terminal first
              curl --insecure https://kvdb.io/HoH8XUdCH28nZGvZMQTDRL/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '1'
              fi
-     # Here's where you will add some code to rollback on failure  
+      - revert-migrations 
   deploy-frontend:
     docker: 
       - image: amazon/aws-cli
@@ -295,6 +294,7 @@ jobs:
             cat inventory.txt
             ansible-playbook -i inventory.txt deploy-backend.yml
       - destroy-environment
+      - revert-migrations
 
   smoke-test:
     docker:
@@ -331,13 +331,36 @@ jobs:
              echo ${URL} 
              if curl -s ${URL} | grep "Welcome"
              then
-                  # Change this to 0 after the job fails
-              return 1
+                  
+              return 0
              else
               return 1
              fi
       - destroy-environment
       - revert-migrations
+  cloudfront-update:
+    docker: 
+      - image: amazon/aws-cli
+      
+    steps:
+      - checkout 
+      - run:
+          name: Install dependencies
+          command: |
+            yum install -y tar gzip
+            curl -sL https://rpm.nodesource.com/setup_16.x | bash -
+            yum install -y nodejs 
+            yum update
+      - run:
+          name: Update cloudfront distribution
+          command: |
+            aws cloudformation deploy \
+            --template-file .circleci/files/cloudfront.yml \
+            --stack-name "initialstack-${CIRCLE_WORKFLOW_ID:0:7}" \
+            --parameter-overrides WorkflowID="udapeople-${CIRCLE_WORKFLOW_ID:0:7}" \
+            --tags project=udapeople
+      # Here's where you will add some code to rollback on failure  
+
  
 
     
