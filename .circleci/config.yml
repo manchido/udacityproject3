@@ -438,25 +438,22 @@ workflows:
                 - master
       - deploy-infrastructure:
           requires: [test-frontend, test-backend, scan-frontend, scan-backend]
-          filters:  
+          filters:
             branches:
-              only:  
-                - updates
+              only:
                 - master
 
       - configure-infrastructure:
           requires: [deploy-infrastructure]
-          filters:  
+          filters:
             branches:
-              only:  
-                - updates
+              only:
                 - master
       - run-migrations:
           requires: [configure-infrastructure]
-          filters:  
+          filters:
             branches:
-              only:  
-                - updates
+              only:
                 - master
       - deploy-frontend:
           requires: [run-migrations]
