@@ -238,7 +238,6 @@ jobs:
           command: |
             curl -sL https://rpm.nodesource.com/setup_16.x | bash -
             yum install -y nodejs 
-            yum update
             yum install -y python37
             curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
             python get-pip.py --user
