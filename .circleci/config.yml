@@ -65,6 +65,7 @@ jobs:
           command: | 
             cd backend
             npm install
+            npm install -g typescript
             npm run build
             
       - save_cache:
