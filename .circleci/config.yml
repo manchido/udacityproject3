@@ -64,8 +64,9 @@ jobs:
           name: Back-end build
           command: | 
             cd backend
-            npm install
-            sudo npm install -g typescript
+            npm cache clean --force
+            rm -rf node_modules
+            npm install 
             npm run build
             
       - save_cache:
