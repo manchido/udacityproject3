@@ -66,6 +66,7 @@ jobs:
             cd backend
             npm cache clean --force
             rm -rf node_modules
+            npm install typescript --save-dev 
             npm install 
             npm run build
             
