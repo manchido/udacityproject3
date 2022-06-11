@@ -65,7 +65,7 @@ jobs:
           command: | 
             cd backend
             npm install
-            npm run build --force
+            npm run build 
             
       - save_cache:
           paths: [backend/node_modules]
@@ -285,7 +285,7 @@ jobs:
           command: |
             cd backend
             npm i
-            npm run build --force
+            npm run build
             cd ..
             # Zip the directory
             tar -C backend/ -czvf artifact.tar.gz .
